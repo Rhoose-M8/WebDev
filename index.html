@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<!-- Head section: Configuration data for website -->
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Home</title> <!-- Displays on "Tab" of web browser -->
+		<link rel="icon" href="images/pricon.png" type="image/png"> <!-- Icon displays on the "Tab" of the web browser -->
+		<link rel="stylesheet" type="text/css" href="styles.css"> <!-- Import CSS Sheet -->
+	</head>
+
+	<!-- Body section -->
+	<body>
+		<!-- Header Section --->
+		<header> 
+			<img src="images/prnzbanner.png" alt = "Premium Roofing Bannger">
+		</header>
+
+		<!-- Navbar Section -->
+		<nav>
+			<ul>
+				<li><a href="index.html" class="active">Home</a></li> <!-- Active Page in Navbar -->
+				<li><a href="portfolio.html" class="MenuBlue">Portfolio</a></li>
+				<li><a href="meettheteam.html" class="MenuBlue">Meet The Team</a></li>
+				<li><a href="testimonials.html" class="MenuBlue">Testimonials</a></li>
+				<li><a href="companyhistory.html" class="MenuBlue">Company History</a></li>
+				<li><a href="organiseaquote.html" class="LightBlue">Organise A Quote</a></li>
+			</ul>
+		</nav>
+
+		<!-- Main Section -->
+		<main class="IndexMain">
+
+			<!-- Title -->
+			<h1>Welcome!</h1>
+
+				<!-- Introduction Article -->
+				<article class="IndexArticle1">
+
+					<!-- Introduction Title -->
+					<h2>We're glad you made it! <br>
+						First, a bit about us:</h2>
+
+					<!-- Introduction Text-->
+					<h4> We are your trusted partner for all your roofing needs in the greater Hawke's Bay area. We are a small, locally owned company <br> 
+						committed to providing top-notch roofing solutions that not only protect your home but also enhance its aesthetic appeal. <br>
+						
+						<div>
+							<br>
+							<!-- Text hidden until "read more" clicked -->
+							<span id="text1" class = "hiddentext">With years of experience under our belt, we take pride in our craftsmanship and dedication to delivering premium roofing services 
+								that exceed your expectations. <br>
+								<br>
+								Whether you're looking for roof repairs, installations, maintenance, or even a complete roof makeover, our skilled team is here <br>
+								to cater to your specific needs with precision and professionalism. <br>
+								<br>
+								Please, explore our website to learn more about our services and discover why Premium Roofing NZ is your go-to choice
+								for roofing excellence in Hawke's Bay. </h4>
+							</span>
+						</div>
+						
+						<!-- Read More Button -->
+						<div class="btn-container">
+							<button id="toggle">Read More</button>
+						</div>
+				</article>
+				
+				<!-- Widgets section -->
+				<div class = "IndexSectionContainer">
+
+					<!-- Facebook Widget section -->
+					<section class="IndexSection1">
+						<div class="CenteredContainer">
+							<!-- Facebook Widget Section Title -->
+							<h3>Our Latest Shenanigans:</h3>
+						</div>
+
+						<!-- Facebook Widget iframe -->
+						<div class="FacebookWidgetContainer">					
+							<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100077251785848&tabs=timeline&
+							width=300&height=400
+							&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId" 
+							width="300" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+						</div>
+					</section>
+
+					<section class="IndexSection2">
+						<h3> Will we be on-site today?</h3>
+						<!-- METSERVICE WIDGET -->
+						<iframe id="widget-iframe" width="200vh" height="400vh"
+						src="https://services.metservice.com/weather-widget/widget?params=blue|large|landscape|days-3|classic&loc=napier&type=urban"
+						allowtransparency="true" style="border:none"></iframe>
+					</section>
+
+					<section class="IndexSection3">
+						<!-- LBP Logo -->
+						<img src="images/lbplogo.png" alt = "lbplogo">
+						<article class="IndexArticle2">
+							<h4>Premium Roofing NZ is a registered, licensed building practitioner.</h4>
+						</article>
+
+					</section>
+				</div>
+		</main>
+	<br>
+			<!--Footer area-->
+			<footer>
+				<div class = ppolicylink>
+					<a href="ppolicy.html"target="_blank">Link to our Privacy Policy</a>
+				</div>
+				<div class = "footer">
+				</div>
+			</footer>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Import JQUERY Script -->
+		<script src="javascript.js"></script> <!-- Import Javascript file -->
+	</body>
+</html>

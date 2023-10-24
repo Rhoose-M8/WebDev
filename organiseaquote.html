@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<!--Head section: website config--->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Organise a Quote</title>
+	<link rel="icon" href="images/pricon.png" type="image/png">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<!--Body section: visible website--->
+<body>
+	<!--Header area--->
+	<header> 
+		<img src="images/prnzbanner.png" alt = "Premium Roofing Bannger">
+	</header>
+
+	<!--Navbar-->
+	<nav>
+		<ul>
+			<li><a href="index.html" class="MenuBlue">Home</a></li>
+			<li><a href="portfolio.html" class="MenuBlue">Portfolio</a></li>
+			<li><a href="meettheteam.html" class="MenuBlue">Meet The Team</a></li>
+			<li><a href="testimonials.html" class="MenuBlue">Testimonials</a></li>
+			<li><a href="companyhistory.html" class="MenuBlue">Company History</a></li>
+			<li><a href="organiseaquote.html" class="active">Organise A Quote</a></li>
+		</ul>
+	</nav>
+
+	<!--Main Area-->
+	<main class = "QuoteMain">		
+		<h1>Do You Have a Project in Mind?</h1>
+		<h3>Simply fill out the form below, and one of our friendly <br>
+		staff will be in touch shortly!</h3>
+
+		<article class="QuoteArticle">
+			<form id="form">
+				<div class="field">
+					<label for="from_name">Name:</label>
+					<input type="text" name="from_name" id="from_name" required>
+				</div>
+				<div class="field">
+					<label for="from_number">Number:</label>
+					<input type="text" name="from_number" id="from_number" required>
+				</div>
+				<div class="field">
+					<label for="from_email">Email:</label>
+					<input type="text" name="from_email" id="from_email" required>
+				</div>
+				<div class="field">
+					<label for="from_address">Address:</label>
+					<input type="text" name="from_address" id="from_address" required>
+				</div>
+				<div class="messagefield">
+					<label for="teammessage">Your Message to the Team:</label>
+					<textarea id="teammessage" name="message" rows="5" required></textarea>
+				</div>
+				<div class="field">
+					<input type="submit" id="button" value="Submit">
+				</div>
+			</form>
+		</article>
+		  
+		  <script type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+		  
+		  <script type="text/javascript">
+			emailjs.init('MENpmsIvIKmyoJHT3')
+		  </script>
+
+		<br>
+
+		<article class = "QuoteArticle2">
+			<p>Premium Roofing NZ adheres to the The Information Privacy Act 2020. Your information will not be shared with any third party vendors under any circumstances.</p>
+		</article>
+
+		<br>
+	</main>
+	
+	<!--Footer area-->
+	<footer>
+		<div class = ppolicylink>
+			<a href="ppolicy.html"target="_blank">Link to our Privacy Policy</a>
+		</div>
+		<div class = "footer">
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="javascript.js"></script>
+</body>
+</html>

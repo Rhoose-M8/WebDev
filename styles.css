@@ -1,0 +1,884 @@
+/** ADOPT MOBILE-FIRST APPROACH - All CSS Values below apply to mobile specifically but may not be changed (e.g. background colour) **/
+
+/** This section of the CSS file applies to all HTML elements of the website **/
+* {
+font-family: "Helvetica", sans-serif; /**Apply Helvetica Font to entire website**/
+}
+
+/** Applies to privacy policy link **/
+
+.ppolicylink {
+	text-align: center; 
+	font-size: 1.3em;
+	color: white;
+	text-decoration: none;
+}
+
+.ppolicylink a {
+	color: white;
+	text-decoration: none;
+}
+
+/** Applies to privacy policy page **/
+.PPolicyArticle1 {
+	width: 85vw;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	margin: 0.5em; 
+	padding: 1.0em;
+	background-color: #A0A1A5;	
+	color: black;
+	border-radius: 6px;
+	border: 1px solid #0050EF;
+}
+
+/** Applies CSS Rules to the body and header of every page in website **/
+body {
+	background-color: #0F2E71;
+    margin: 0;
+    padding: 0;
+}
+
+header { /** Applies to the header of every page in website **/
+	height: 25vh;
+	color: #0F2E71;
+	background-color: #0F2E71;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-repeat: no-repeat;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+	header img { /** Applies to image in the header of every page in the website **/
+		max-width: 100%;
+		max-height: 100%;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+/** Applies to the Nav Bar of every web page **/
+nav {
+	background-color: #0F2E71;
+	display: flex;
+	flex-direction: column; 
+	align-items: center; 
+	text-align: center; 
+	margin: 0;
+	padding: 0;
+}
+
+	nav ul {
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		overflow: auto;
+		margin-top: 10px;
+		margin: 0;
+		padding: 0;
+	}
+
+		nav ul li {
+			display: block;
+			font-size: 1em;
+			margin-bottom: 10px; 
+			overflow: auto;
+			border: 1px solid black;
+		}
+
+		nav ul li a{
+			text-decoration: none;
+			display: block;
+			padding: 10px 20px;
+		}
+
+		nav ul li a:hover { 
+			color: black; /** Change colour of text to black when moused over **/
+		}
+
+	.MenuBlue { /** Default colour of nav bar **/
+		background-color: #0050EF;
+		color: white;
+	}
+
+	.LightBlue { /** Default colour of organise a quote page **/
+		background-color: #03B4E0;
+		color: black;
+	}
+
+	.active { /**Default colour of the active page **/
+		background-color: #024059;
+		color: white;
+	}
+
+/** this section applies to the main section of every page on this website **/
+main {
+		background-color: #0F2E71;
+		justify-content: center;
+	}
+
+/** Applies to various fonts throughout the website **/
+h1 {
+	font-size: 3em;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
+
+	main h2 {
+		color: Black;
+	}
+
+	h3 {
+		font-size: 2em;
+	}
+
+	.IndexMain h3 {
+		color: white;
+	}
+
+	main h4 {
+		color: black;
+	}
+
+/** Applies to all images in main section **/
+main img { 
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+/** Applies to container for buttons **/
+.btn-container { 
+	margin: auto;
+	height:40px;
+	width:166px;
+	margin-top: 10px;
+}
+				
+/** applies to all buttons on all pages **/
+button {
+	cursor:pointer;
+	border:none;
+	padding:8px;
+	font-size:20px;
+	color: #0050EF;
+	box-sizing:border-box;
+	background-color: #A0A1A5;
+}
+	
+	button:hover { /** Changes text colour to black when moused over **/
+		color: black;
+	}
+
+		.darkbutton {
+			cursor:pointer;
+			border:none;
+			padding:8px;
+			font-size:20px;
+			color: #03B4E0;
+			box-sizing:border-box;
+			background-color: #646369;
+		}
+			.darkbutton:hover { /** Changes text colour to white when moused over **/
+				color: white;
+			}
+
+/** Applies to the footer of every page **/
+footer {
+	height: 120px;
+}
+
+	.footer {
+		width: 100%;
+		height: 120px;
+		background-image: url("images/320px footer.png"); /** NOTE: Image changes depending on media size. **/
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+/****** END OF GENERIC CSS, THE FOLLOWING IS FOR SPECIFIC PAGES OR SPECIFIC ELEMENTS ******/
+
+
+
+
+
+
+
+/** APPLIES TO TESTIMONIAL SLIDESHOW **/
+
+.slideshow-section {
+	align-items: center;
+	text-align: center;
+}
+
+.slideshow-image {
+	width: 85vw;
+	object-fit: cover; /* Ensures the image scales while maintaining aspect ratio */
+  }
+
+
+/** Applies to images on portfolio, team, and history pages **/
+.portfolioimg {
+	width: 85vw;	
+	padding-top: 8px;			
+}
+
+.Teamimg {
+	width: 85vw;	
+	padding-top: 8px;					
+}
+
+.Historyimg {
+	width: 85vw;
+	padding-top: 8px;		
+}
+
+/** Applies to span text with read more buttons **/
+.hiddentext {
+	display: none;
+}
+
+/** Applies to Index pages ONLY **/
+.IndexArticle1 {
+	width: 85vw;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	margin: 0.5em; 
+	padding: 1.0em;
+	background-color: #A0A1A5;	
+	color: black;
+	border-radius: 6px;
+	border: 1px solid #0050EF;
+}
+
+.IndexArticle2 {
+	width: 200px;
+	text-align: center;
+	margin: 0 auto; 
+	margin: 0.5em; 
+	padding: 1.0em;
+	background-color: #A0A1A5;	
+	color: black;
+	border-radius: 6px;
+	border: 1px solid #0050EF;
+}
+
+.IndexSection2 {
+	text-align: center; 
+	display: flex; 
+	flex-direction: column; 
+	align-items: center; 
+	flex-basis: calc(50% - 10px); 
+}
+
+	.IndexSection2 h3 {
+		color: white;
+}
+
+.IndexSection3 {
+	text-align: center; 
+	display: flex; 
+	flex-direction: column; 
+	align-items: center; 
+	flex-basis: calc(50% - 10px); 
+}
+
+.CenteredContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 100%;
+}
+
+.FacebookWidgetContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+/** Applies to portfolio page **/			
+.PortfolioMain {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+	.PortfolioMainSection {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+		.PortfolioArticle1 {
+			background-color: #A0A1A5;
+			color: black;
+			width: 85vw;
+			margin: 0.5em; 
+			padding: 1.0em;
+			border-radius: 6px;
+			border: 1px solid #0050EF;
+		}
+
+		.PortfolioArticle2 {
+			background-color: #646369;
+			color: white;
+			width: 85vw;
+			margin: 0.5em; 
+			padding: 1.0em;
+			border-radius: 6px;
+			border: 1px solid #0050EF;
+		}
+
+		.TestimonialsArticle1 {
+			background-color: #A0A1A5;
+			color: black;
+			width: 85vw;
+			margin: 0.5em; 
+			padding: 1.0em;
+			border-radius: 6px;
+			border: 1px solid #0050EF;
+		}
+
+		.TestimonialsArticle2 {
+			background-color: #646369;
+			color: white;
+			width: 85vw;
+			margin: 0.5em; 
+			padding: 1.0em;
+			border-radius: 6px;
+			border: 1px solid #0050EF;
+		}
+
+/** Applies to team page **/
+.TeamMain {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+	.TeamMainSection {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+		.TeamArticle1 {
+			background-color: #A0A1A5;
+			color: black;
+			width: 85vw;
+			margin: 0.5em; 
+			padding: 1.0em;
+			border-radius: 6px;
+			border: 1px solid #0050EF;
+		}
+
+		.TeamArticle2 {
+			background-color: #646369;
+			color: white;
+			width: 85vw;
+			margin: 0.5em; 
+			padding: 1.0em;
+			border-radius: 6px;
+			border: 1px solid #0050EF;
+		}
+/** Applies to testimonials page **/
+.TestimonialsMain {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+	.TestimonialsMainSection {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+/** Applies to History page **/			
+.HistoryMain {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+	.HistoryMainSection {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+		.HistoryArticle1 {
+			background-color: #A0A1A5;
+			color: black;
+			width: 85vw;
+			margin: 0.5em; 
+			padding: 1.0em;
+			border-radius: 6px;
+			border: 1px solid #0050EF;
+		}
+
+		.HistoryArticle2 {
+			background-color: #646369;
+			color: white;
+			width: 85vw;
+			margin: 0.5em; 
+			padding: 1.0em;
+			border-radius: 6px;
+			border: 1px solid #0050EF;
+		}
+
+/** Applies to quote page **/
+.QuoteMain {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
+
+	.QuoteMain H3 {
+		color: white;
+	}
+			
+	.QuoteArticle {
+		background-color: #646369;
+		width: 85vw;
+		padding: 15px;
+		text-align: center;
+		margin: 0 auto;
+		border-radius: 6px;
+		border: 1px solid #0050EF;
+	}
+	
+	.field {
+		display: flex;
+		flex-direction: column; 
+		align-items: flex-start; 
+		margin-bottom: 20px;
+
+	}
+	
+	.field label {
+		font-size: 20px;
+		color: white;
+		background-color: #024059;
+		padding: 5px 10px;
+		border: 1px solid #03B4E0;
+		margin-bottom: 5px; 
+	}
+
+	.messagefield {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start; 
+		margin-bottom: 20px;
+
+	}
+
+	.messagefield label {
+		font-size: 20px;
+		color: white;
+		background-color: #024059;
+		padding: 5px 10px;
+		border: 1px solid #03B4E0;
+		margin-bottom: 5px; 	
+	}
+	
+	.field input[type="text"],
+	.messagefield textarea {
+		line-height: 1.5;
+		font-size: 20px;
+		background-color: #A0A1A5;
+		border: none;
+		padding: 5px; 
+		width: 98%;
+	}
+
+	.QuoteArticle2 {
+		background-color: #03B4E0;
+		padding: 10px 10px;
+		text-align: center;
+		margin: 0 auto; 
+		border: 1px solid #0050EF;
+		border-radius: 6px;
+	}
+	
+	input[type="submit"] {
+		display: block;
+		margin: 0 auto; 
+		padding: 6px 30px;
+		font-size: 20px;
+		background-color: #03B4E0;
+		color: black;
+		border: none;
+	}
+
+/** APPLIES TO TABLET SIZED SCREENS AND BIGGER **/
+@media screen and (min-width: 426px) 
+{
+header {
+	height: 30vh;
+}
+
+	header img {
+		height: 100%;
+		width: auto;
+	}	
+
+.slideshow-image {
+	width: 60vw;
+}
+
+nav{
+	justify-content: center;
+}
+	nav ul {
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		overflow: auto;
+	}
+
+	nav ul li {
+		display: block;
+		position: relative;
+		font-size: 1.5em;
+	}	
+
+	nav ul li a {
+		white-space: pre-line;
+	}
+
+.IndexMain {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+	
+	.IndexSectionContainer {
+		display: flex;
+		justify-content: space-between; 
+		width: 100%;
+		color: white;
+	}
+		
+	.IndexSection1 {
+		flex-basis: calc(50% - 5px); 
+		text-align: center; 
+		display: flex; 
+		flex-direction: column; 
+		align-items: center; 
+	}
+		
+	.IndexSection2 {
+		text-align: center; 
+		display: flex; 
+		flex-direction: column; 
+		align-items: center; 
+		flex-basis: calc(50% - 10px); 
+	}
+
+.PortfolioMain {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.TeamMain {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.TestimonialsMainSection {
+	display: flex;
+	flex-direction: row; /* Make it horizontal */
+	justify-content: space-between;
+	align-items: flex-start;
+  }
+
+	.TestimonialsLeft,
+	.TestimonialsRight {
+		flex-basis: 50%; /* Equal width for both sections */
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.TestimonialsArticle1,
+	.TestimonialsArticle2 {
+		width: 40vw; /* Adjust the width as needed */
+		margin: 0.5em 0; /* Apply equal top and bottom margin, adjust as needed */
+		padding: 1.0em;
+	}
+	
+	/* Apply margin to the left section */
+	.TestimonialsLeft .TestimonialsArticle1,
+	.TestimonialsLeft .TestimonialsArticle2 {
+		margin-right: 0.5em; /* Adjust the right margin for left section */
+		margin-bottom: 0;
+	}
+	
+	/* Apply margin to the right section */
+	.TestimonialsRight .TestimonialsArticle1,
+	.TestimonialsRight .TestimonialsArticle2 {
+		margin-left: 0.5em; /* Adjust the left margin for right section */
+	}
+
+.HistoryMain {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer {
+	background-image: url("images/768px footer.png");
+}
+		
+}
+
+/** APPLIES TO LAPTOP SIZE SCREENS AND BIGGER **/
+@media screen and (min-width: 769px) 
+{
+header img {
+	height: 100%;
+	width: auto;
+}	
+
+.slideshow-image {
+	width: 30vw;
+}
+
+nav {
+	justify-content: center;
+}
+
+	nav ul li {
+		display: inline-block;
+		position: relative;
+		font-size: 1.5em;
+	}	
+
+	nav ul li a {
+		white-space: pre-line;
+	}
+
+.IndexMain {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+		
+	.IndexSectionContainer {
+		display: flex;
+		justify-content: space-between; 
+		width: 100%;
+	}
+		
+	.IndexSection1 {
+		flex-basis: calc(50% - 5px); 
+		text-align: center;
+		display: flex; 
+		flex-direction: column; 
+		align-items: center;
+	}
+		
+	.IndexSection2 {
+		text-align: center; 
+		display: flex; 
+		flex-direction: column; 
+		align-items: center; 
+		flex-basis: calc(50% - 10px); 
+	}
+
+	.IndexSection3 {
+		text-align: center;
+		display: flex; 
+		flex-direction: column;
+		align-items: center;
+		flex-basis: calc(50% - 10px);
+	}
+
+
+
+.PortfolioMain {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+		
+		.PortfolioMainSection {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+		
+		.PortfolioSection1,
+		.PortfolioSection2,
+		.PortfolioSection3 {
+			display: flex;
+			flex-direction: row; 
+			justify-content: space-between;
+			align-items: flex-start;
+			text-align: center; 
+			margin-top: 20px; 
+		}
+
+		.PortfolioS1D2,
+		.PortfolioS2D2,
+		.PortfolioS3D2 {
+			margin-top: 50px;
+		}
+		
+		.portfolioimg {
+			max-width: 25vw;
+			width: 100%;
+		}
+		
+		.PortfolioArticle1,
+		.PortfolioArticle2,
+		.PortfolioArticle3 {
+			max-width: 60vw;
+			width: 100%;
+		}
+
+.TeamMain {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+		
+		.TeamMainSection {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+		
+		.TeamSection1,
+		.TeamSection2{
+			display: flex;
+			flex-direction: row; 
+			justify-content: space-between;
+			align-items: flex-start;
+			text-align: center; 
+			margin-top: 20px; 
+		}
+
+			.TeamS1D2,
+			.TeamS2D2{
+				margin-top: 50px;
+		}
+		
+		.Teamimg {
+			max-width: 25vw;
+			width: 100%;
+		}
+		
+		.TeamArticle1,
+		.TeamArticle2 {
+			max-width: 60vw;
+			width: 100%;
+		}
+
+.HistoryMain {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+		
+		.HistoryMainSection {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+		
+		.HistorySection1,
+		.HistorySection2,
+		.HistorySection3,
+		.HistorySection4 {
+			display: flex;
+			flex-direction: row; /* Change flex-direction to column */
+			text-align: center;
+			margin-top: 20px;
+			align-items: flex-start; 
+		  }
+
+		.HistoryS1D2,
+		.HistoryS2D2,
+		.HistoryS3D2,
+		.HistoryS4D2 {
+		margin-top: 50px; /* Adjust the margin-top as needed */
+		max-width: 60vw;
+		width: 100%;
+		}
+		
+		.Historyimg {
+			max-width: 25vw;
+			width: 100%;
+		}
+		
+		.HistoryArticle1,
+		.HistoryArticle2,
+		.HistoryArticle3,
+		.HistoryArticle4 {
+			max-width: 60vw;
+			width: 100%;
+		}
+
+.footer {
+	background-image: url("images/1024px footer.png");
+}
+
+}
+
+/** APPLIES TO 1440P SCREENS **/
+@media screen and (min-width: 1025px) 
+{
+nav ul li {
+	display: inline-block;
+	position: relative;
+	font-size: 2em;
+}	
+
+.footer {
+	background-image: url("images/1440px footer.png");
+}
+
+}
+
+/** APPLIES TO 4k SCREENS **/
+@media screen and (min-width: 1441px) 
+{
+footer {
+	height: 1vh;
+}
+
+.footer {
+	background-image: url("images/2560px footer.png");
+}
+
+}
